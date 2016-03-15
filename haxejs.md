@@ -22,7 +22,10 @@ nodejs, c++, php, flash, java, IOS, Android, html5 & more<!-- .element: class="f
 
 ## Matthijs Kamstra
 aka [mck]  
-[@matthijskamstra](https://twitter.com/matthijskamstra)  
+
+[@matthijskamstra](https://twitter.com/matthijskamstra) #haxe
+
+[slides-meetup-dev-haag](http://matthijskamstra.github.io/slides-meetup-dev-haag)
 
 <!--
 [*speaker notes*](haxejs.md)
@@ -179,9 +182,9 @@ It is strictly typed and very easy to learn if you are already familiar with Jav
 
 The Haxe Compiler is responsible for translating the Haxe programming language to the target platform native source code or binary.
 
-General purpose: Array/Map/String/Date Timer/Template/Unit/crypto
-System: C++ C# Java Neko PHP - Filesystem/db/File
-Target specific: Each Haxe target has a distinct sub-directory containing target-specific APIs. These can only be accessed when compiling to the given target.
+- **General purpose:** Array/Map/String/Date Timer/Template/Unit/crypto
+- **System:** C++ C# Java Neko PHP - Filesystem/db/File
+- **Target specific:** Each Haxe target has a distinct sub-directory containing target-specific APIs. These can only be accessed when compiling to the given target.
 
 Macros / IDE integration
 
@@ -193,9 +196,7 @@ haxelib
 
 - Created by Nicolas Cannasse <!-- .element: class="fragment" data-fragment-index="1" -->
 - Haxe predecessor MTASC started in 2001<!-- .element: class="fragment" data-fragment-index="2" -->
-- Dev started at Motion Twin in October 2005<!-- .element: class="fragment" data-fragment-index="3" -->
-- First beta released February 2006<!-- .element: class="fragment" data-fragment-index="4" -->
-- Initial support for AVM and Neko VM targets<!-- .element: class="fragment" data-fragment-index="5" -->
+- First Haxe beta released February 2006<!-- .element: class="fragment" data-fragment-index="4" -->
 - New language targets created by contributors<!-- .element: class="fragment" data-fragment-index="6" -->
 - Haxe Foundation formed November 2012<!-- .element: class="fragment" data-fragment-index="7" -->
 - World Wide Haxe Conference (WWX) held annually in Paris by Silex Labs<!-- .element: class="fragment" data-fragment-index="8" -->
@@ -203,7 +204,7 @@ haxelib
 ::note::
 
 [@ncannasse](https://twitter.com/ncannasse)
-Motion Twin creates primairily games
+
 
 
 ::subslide::
@@ -221,10 +222,17 @@ Motion Twin creates primairily games
 - 2015: Haxe 3.2 (Python)
 - 2016: Haxe 3.x (Lua?)
 
+::note::
+
+first AVM and Neko VM target
 
 ::subslide::
 
 <!-- .slide: data-background="img/knife3.jpg" data-background-size="800px" data-background-color="#FFFFFF" -->
+
+::note::
+
+# metaphor
 
 ::subslide::
 
@@ -266,7 +274,7 @@ Source code! not VM
 I promised a panda.
 https://twitter.com/MatthijsKamstra/status/703934883454910466
 
-
+**drink water!**
 
 ::slide::
 
@@ -277,26 +285,6 @@ https://twitter.com/MatthijsKamstra/status/703934883454910466
 ::note::
 
 code talks, so lets dive into it
-
-
-::subslide::
-
-## The Haxe Language
-
-- Strictly typed <!-- .element: class="fragment fade-in b" data-fragment-index="1" -->
-- Type inference <!-- .element: class="fragment fade-in b" data-fragment-index="2" -->
-- Object Oriented <!-- .element: class="fragment fade-in b" data-fragment-index="3" -->
-- String interpolation <!-- .element: class="fragment fade-in b" data-fragment-index="4" -->
-- Iterators <!-- .element: class="fragment fade-in b" data-fragment-index="5" -->
-- Array comprehension <!-- .element: class="fragment fade-in b" data-fragment-index="6" -->
-- Pattern matching <!-- .element: class="fragment fade-in b" data-fragment-index="7" -->
-- Conditional compilation <!-- .element: class="fragment fade-in b" data-fragment-index="8" -->
-- Externs <!-- .element: class="fragment fade-in b" data-fragment-index="9" -->
-
-::note::
-
-http://haxe.org/documentation/introduction/language-features.html
-
 
 ::subslide::
 
@@ -508,10 +496,11 @@ $type(pi); // Int
 
 ::note::
 
-Externs can be used to describe target-specific interaction in a type-safe manner.
+Externs can be used to describe target-specific interaction in a type-safe manner.  
 A common example from the *Haxe Standard Library* is the Math class,
 
-The Haxe Standard Library comes with many externs for the Flash and JavaScript target. They allow accessing the native APIs in a type-safe manner and are instrumental for designing higher-level APIs. 
+The Haxe Standard Library comes with many externs for the Flash and JavaScript target.
+They allow accessing the native APIs in a type-safe manner and are instrumental for designing higher-level APIs. 
 
 http://haxe.org/manual/lf-externs.html
 
@@ -519,6 +508,10 @@ http://haxe.org/manual/lf-externs.html
 ::subslide::
 
 # Who uses Haxe?
+
+::note::
+
+why should you use it!
 
 ::subslide::
 
@@ -531,7 +524,6 @@ http://haxe.org/manual/lf-externs.html
 ::subslide::
 
 <!-- .slide: data-background="img/logo/fbi.png" data-background-size="600px" data-background-color="#ffffff" -->
-
 
 ::note::
 
@@ -553,9 +545,13 @@ freedom to choose!
 Uncle Bob story!
 
 
+
+
 ::slide::
 
 <!-- .slide: data-background-image="img/cute/puppy.jpg" -->
+
+
 
 
 ::slide::
@@ -564,7 +560,6 @@ Uncle Bob story!
 
 #What problem does it solve?
 
-
 ::subslide::
 
 <!-- .slide: data-background="img/slides/Plan-Design-Develop.png" data-background-size="900px" data-background-color="#FAFAF6" -->
@@ -572,7 +567,6 @@ Uncle Bob story!
 ::note::
 
 short version of (agile team) most processes
-
 
 ::subslide::
 
@@ -586,7 +580,6 @@ but are they?
 
 ::subslide::
 
-
 <!-- .slide: data-background="img/slides/right.gif" -->
 
 ::subslide::
@@ -597,9 +590,7 @@ but are they?
 
 ## Back-end
 
-
 ::subslide::
-
 
 <!-- .slide: data-background="img/slides/staredown.jpg" data-background-size="900px" -->
 
@@ -617,7 +608,6 @@ google translate<!-- .element: class="fragment fade-in b" data-fragment-index="1
 
 Russian & Korean
 
-
 ::subslide::
 
 ![](img/slides/rubberduck_small.png)
@@ -634,24 +624,21 @@ The name is a reference to a story in the book The Pragmatic Programmer in which
 
 ::note::
 
-Personal experience: not a difficult question...
+Personal experience! 
 
-busy, no time, ...
+it's not a difficult question...
+
+busy, no time, etc, ...
 
 ::subslide::
 
 <!-- .slide: data-background="img/slides/comfortzone.jpg" data-background-size="800px" data-background-color="#FAF9F7" -->
 
-::note::
-
-
 ::subslide::
 
 <!-- .slide: data-background="img/slides/Comfort-Zone-Model.jpg" data-background-size="900px" data-background-color="#FFFFFF" -->
 
-
 ::subslide::
-
 
 <!-- .slide: data-background="img/slides/howtofix.gif"  -->
 
@@ -662,6 +649,10 @@ how to fix it?
 ::subslide::
 
 ## what if both speak the same language
+
+::note::
+
+#HAXE!
 
 ::subslide::
 
@@ -679,6 +670,14 @@ Hindi
 
 <!-- .slide: data-background="img/slides/happy_super.gif" -->
 
+::note::
+
+- haxe programming language is the same for both dev
+- Haxe standard lib
+	- General purpose: Array/Map/crypto/template
+	- System
+	- Target specific 
+
 ::subslide::
 
 # Plan
@@ -686,6 +685,13 @@ Hindi
 ::subslide::
 
 <!-- .slide: data-background="img/slides/happy_evil.gif"-->
+
+::note::
+
+- use backend-dev to help out front-end
+- debuggin / bug fixing
+- complex task for senior-dev (front- or back-end)
+
 
 ::subslide::
 
@@ -695,6 +701,13 @@ Hindi
 
 <!-- .slide: data-background="img/slides/happy_manager.gif" -->
 
+::note::
+
+- team
+- learning from each other
+- productivity
+- ...
+
 ::subslide::
 
 # Everybody
@@ -703,13 +716,19 @@ Hindi
 
 <!-- .slide: data-background="img/slides/happy_dance.gif" -->
 
+::note::
 
+- designers
 
 ::subslide::
 
 > “Use only that which works, and take it from any place you can find it.” 
 
-_Bruce Lee, Tao of Jeet Kune Do_
+_Bruce Lee, Tao of Jeet Kune Do_ <!-- .element: class="fragment fade-in b" data-fragment-index="1" -->
+
+::note::
+
+final note on 'what does it solve'
 
 ::slide::
 
@@ -820,9 +839,13 @@ Haxe Foundation
 
 need more vocal people from other targets
 
+
+
 ::slide::
 
 <!-- .slide: data-background-image="img/cute/cute-4.jpg" -->
+
+
 
 ::slide::
 
@@ -835,13 +858,11 @@ need more vocal people from other targets
 - Familiar AS3/C/Java-style syntax. 
 - Strict type safety, with a powerful type inference engine.
 - 9 compilation targets
-- reduced language/platform lock-in
-- open source
-- started 10 years ago
-- modern language and compiler features
-- a fast optimizing compiler
-.
-
+- Reduced language/platform lock-in
+- Open source
+- Started 10 years ago
+- Modern language and compiler features
+- A fast optimizing compiler
 
 ::subslide::
 
@@ -862,10 +883,13 @@ online REPL try.haxe.org
 > REPL stands for Read Eval Print Loop and it represents a computer environment like a window console or Unix/Linux shell where a command is entered and system responds with an output in interactive mode. Node.js or Node comes bundled with a REPL environment.
 
 
+
 ::slide::
 
 <!-- .slide: data-background-video="video/thats_all_folks.mp4,video/thats_all_folks.webm" -->
 # the end!
+
+
 
 ::slide::
 
