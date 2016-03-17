@@ -21,15 +21,12 @@ nodejs, c++, php, flash, java, IOS, Android, html5 & more<!-- .element: class="f
 ::subslide::
 
 ## Matthijs Kamstra
-aka [mck]  
+**aka [mck]**  
 
 [@matthijskamstra](https://twitter.com/matthijskamstra) #haxe
 
-[slides-meetup-dev-haag](http://matthijskamstra.github.io/slides-meetup-dev-haag)
+[slides meetup /dev/haag](http://matthijskamstra.github.io/slides-meetup-dev-haag)
 
-<!--
-[*speaker notes*](haxejs.md)
--->
 
 ::subslide::
 
@@ -538,12 +535,15 @@ https://twitter.com/elsassph/status/615942366478864384
 
 ::note::
 
-Why should you use it?
+- Why should you use it?
+- freedom to choose!
+- Uncle Bob story!
 
-freedom to choose!
+::subslide::
 
-Uncle Bob story!
+> “If your only tool is a hammer then every problem looks like a nail.” 
 
+_Abraham Maslow_ 
 
 
 
@@ -648,7 +648,7 @@ how to fix it?
 
 ::subslide::
 
-## what if both speak the same language
+## what if both speak the same language?
 
 ::note::
 
@@ -730,9 +730,13 @@ _Bruce Lee, Tao of Jeet Kune Do_ <!-- .element: class="fragment fade-in b" data-
 
 final note on 'what does it solve'
 
+
+
 ::slide::
 
 <!-- .slide: data-background-image="img/cute/cutepig.jpg" -->
+
+
 
 ::slide::
 
@@ -745,6 +749,10 @@ final note on 'what does it solve'
 > “A developer who is not optimistic shouldn't be a developer.” 
 
 _Harry Triguboff_
+
+::note::
+
+Harry is not a software-developer but a property-developer
 
 
 ::subslide::
@@ -763,9 +771,6 @@ _Harry Triguboff_
 	- Good support in Flash-/Haxe-Develop (Windows only)
 	- Limited support in IntelliJ IDEA for all platforms
 	- Few other IDEs like FDT
-- Verbosity (i.e. no short lambdas)
-- Written in OCaml :)
-
 Not IDE, but editors:
 - atom, virtual studio code, bracket, sublime text
 
@@ -775,9 +780,9 @@ Not IDE, but editors:
 
 ::note::
 
-api documentation is beter, 
-but examples are limited
-haxejs / haxenode documentation
+- api documentation is beter, 
+- but examples are limited
+- haxejs / haxenode documentation
 
 ::subslide::
 
@@ -785,9 +790,9 @@ haxejs / haxenode documentation
 
 ::note::
 
-Games... and the rest?
+- Games... and the rest?
+- Presentation / talks
 
-Presentation / talks
 
 ::subslide::
 
@@ -804,12 +809,12 @@ website, information,
 ::note::
 
 - Haxe installer
-- editor installer
-- language installer
-- how to start
-- learn from internet
-- not a lot of developers
-- books?
+- Editor installer
+- Language plugin installer
+- How to start / Where to start?
+- Only option is to learn php, and convert it to Haxe
+- Where are Haxe developers?
+- Books / Manuals
 
 ::subslide::
 
@@ -817,19 +822,15 @@ website, information,
 
 ::note::
 
-Haxe Foundation
-
 - Core contributors to the compiler and the language spec
-- See @glazou's
-  [critique of the Haxe foundation](http://www.silexlabs.org/quaxe-infinity-and-beyond/)
-  - Controversy alert: Run like 1-man show
+- See @glazou's [critique of the Haxe foundation](http://www.silexlabs.org/quaxe-infinity-and-beyond/)
 - Could learn from the iojs/node foundation
+	- Haxe Foundation
 
 - Daniel Glazman sits on one of W3C's committees, and so his opinion carries a lot of weight
 - However, this talk was very polarising amongst the Haxe community, and many of them reject his point of view
 - His point that large corporations will only invest in technologies that appear to be governed by a stable committee (or another corporation) still should be considered though, and seeing how NodeJs foundation has recruited comapnies to sit on its board
-- Read "Regarding Haxe Foundation" in
-  [this heated discussion](https://groups.google.com/d/msg/haxelang/i8iXdpK8oAc/qgUmBo5sYPEJ)
+- Read "Regarding Haxe Foundation" in [this heated discussion](https://groups.google.com/d/msg/haxelang/i8iXdpK8oAc/qgUmBo5sYPEJ)
 
 ::subslide::
 
